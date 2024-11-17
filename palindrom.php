@@ -1,3 +1,5 @@
+<?php
+
 // Способ 1: Через строковое преобразование
 function isPalindromeString(int $number): bool {
     // Преобразуем число в строку
@@ -40,48 +42,47 @@ foreach ($testNumbers as $num) {
     echo "\n";
 }
 
-<!-- 
-Особенности реализации:
 
-1. Строковый метод (isPalindromeString):
-Проще в реализации
-Использует больше памяти
-Может быть медленнее на больших числах
+// Особенности реализации:
 
-2.Математический метод (isPalindromeMath):
-Не использует дополнительные строковые преобразования
-Более эффективен по памяти
-Работает только с целыми числами
-Обрабатывает отрицательные числа
-Более производительный на больших числах
+// 1. Строковый метод (isPalindromeString):
+// Проще в реализации
+// Использует больше памяти
+// Может быть медленнее на больших числах
 
-Примеры вывода:
-Число 121: палиндром
-Число 123: не палиндром
-Число 12321: палиндром
-Число 12345: не палиндром
-Число 1001: палиндром
+// 2.Математический метод (isPalindromeMath):
+// Не использует дополнительные строковые преобразования
+// Более эффективен по памяти
+// Работает только с целыми числами
+// Обрабатывает отрицательные числа
+// Более производительный на больших числах
 
--------------------------------------------------
+// Примеры вывода:
+// Число 121: палиндром
+// Число 123: не палиндром
+// Число 12321: палиндром
+// Число 12345: не палиндром
+// Число 1001: палиндром
 
-Implementierungsmerkmale:
+// -------------------------------------------------
 
-1. String-Methode (isPalindromeString):
-Einfacher umzusetzen
-Benötigt mehr Speicher
-Bei größeren Zahlen kann es langsamer sein
+// Implementierungsmerkmale:
 
-2. Mathematische Methode (isPalindromeMath):
-Verwendet keine zusätzlichen String-Konvertierungen
-Speichereffizienter
-Funktioniert nur mit ganzen Zahlen
-Behandelt negative Zahlen
-Leistungsstärker bei größeren Zahlen
+// 1. String-Methode (isPalindromeString):
+// Einfacher umzusetzen
+// Benötigt mehr Speicher
+// Bei größeren Zahlen kann es langsamer sein
 
-Ausgabebeispiele:
-Nummer 121: Palindrom
-Nummer 123: kein Palindrom
-Nummer 12321: Palindrom
-Nummer 12345: kein Palindrom
-Nummer 1001: Palindrom 
--->
+// 2. Mathematische Methode (isPalindromeMath):
+// Verwendet keine zusätzlichen String-Konvertierungen
+// Speichereffizienter
+// Funktioniert nur mit ganzen Zahlen
+// Behandelt negative Zahlen
+// Leistungsstärker bei größeren Zahlen
+
+// Ausgabebeispiele:
+// Nummer 121: Palindrom
+// Nummer 123: kein Palindrom
+// Nummer 12321: Palindrom
+// Nummer 12345: kein Palindrom
+// Nummer 1001: Palindrom 
