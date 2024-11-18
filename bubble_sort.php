@@ -5,12 +5,15 @@ function bubbleSort(array $arr): array {
     $swapped = false;
     
     // Внешний цикл для контроля количества проходов
+    // Äußere Schleife zur Steuerung der Anzahl der Durchgänge
     for ($i = 0; $i < $n - 1; $i++) {
         $swapped = false;
         
         // Внутренний цикл для сравнения элементов
+        // Innere Schleife zum Vergleichen von Elementen
         for ($j = 0; $j < $n - $i - 1; $j++) {
             // Если текущий элемент больше следующего, меняем их местами
+            // Wenn das aktuelle Element größer als das nächste ist, tauschen Sie sie aus
             if ($arr[$j] > $arr[$j + 1]) {
                 // Обмен значений
                 $temp = $arr[$j];
@@ -22,6 +25,7 @@ function bubbleSort(array $arr): array {
         }
         
         // Если за проход не было обменов, массив уже отсортирован
+        // Wenn während des Durchlaufs kein Austausch stattgefunden hat, ist das Array bereits sortiert
         if (!$swapped) {
             break;
         }
@@ -31,6 +35,7 @@ function bubbleSort(array $arr): array {
 }
 
 // Пример использования:
+// Anwendungsbeispiel:
 $array = [64, 34, 25, 12, 22, 11, 90];
 $sortedArray = bubbleSort($array);
 print_r($sortedArray);
