@@ -1,16 +1,21 @@
 <?php
 
 // Способ 1: Через строковое преобразование
+// Methode 1: Durch String-Konvertierung
 function isPalindromeString(int $number): bool {
     // Преобразуем число в строку
+    // Konvertieren einer Zahl in eine Zeichenfolge
     $str = (string)$number;
     // Сравниваем строку с её перевернутой версией
+    // Vergleichen einer Zeichenfolge mit ihrer invertierten Version
     return $str === strrev($str);
 }
 
 // Способ 2: Математический подход (без преобразования в строку)
+// Methode 2: Mathematischer Ansatz (keine Konvertierung in String)
 function isPalindromeMath(int $number): bool {
     // Отрицательные числа не могут быть палиндромами
+    // Negative Zahlen können keine Palindrome sein
     if ($number < 0) {
         return false;
     }
